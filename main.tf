@@ -1,6 +1,6 @@
 module "monitoring_bundle" {
   source  = "blackbird-cloud/monitoring-bundle/helm"
-  version = "0.0.2"
+  version = "0.0.3"
 
   grafana_ingress_class             = var.grafana_ingress_class
   grafana_ingress_host              = var.grafana_ingress_host
