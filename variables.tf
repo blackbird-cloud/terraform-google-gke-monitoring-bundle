@@ -72,3 +72,15 @@ variable "storage_class_name" {
   default     = "standard-rwo"
   description = "K8S Storage Class name for persistence"
 }
+
+variable "prometheus_values" {
+  type        = list(string)
+  description = "A list of extra values to pass into the Prometheus helm chart."
+  default     = []
+}
+
+variable "grafana_values" {
+  type        = list(string)
+  description = "A list of extra values to pass into the Grafana helm chart."
+  default     = []
+}
